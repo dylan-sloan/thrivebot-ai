@@ -10,16 +10,21 @@ body {
 }
 
 .header {
-  background-color: #f0f0f0;
+  /*background-color: #f0f0f0; Old background color in case we want to go back */ 
+  background-color: #F7F4EA;
   padding: 10px;
   text-align: center;
   border-bottom: 2px solid #ccc;
 }
 
+.header h1{
+  font-weight: 900; /*Definitely could do more here*/
+}
+
 .main-container {
   display: flex;
   flex: 1;
-  background-color: #ffffff;
+  background-color: #F7F4EA; 
 }
 
 .chat-section {
@@ -35,6 +40,7 @@ body {
   padding: 10px;
   border: 1px solid #ddd;
   margin-bottom: 10px;
+  background-color: #ffffff;
 }
 
 .input-box {
@@ -74,12 +80,13 @@ body {
   padding: 10px;
   border: 2px solid #ddd;
   border-radius: 10px;
-  max-width: 200px;
+  width: 14em;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .robot-image {
-  width: 150px;
+  width: 15em;
   height: auto;
   object-fit: cover;
 }
