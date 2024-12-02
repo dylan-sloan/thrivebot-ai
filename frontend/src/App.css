@@ -76,6 +76,7 @@ body {
 }
 
 .speech-bubble {
+  position: relative;
   margin-bottom: 20px;
   padding: 10px;
   border: 2px solid #ddd;
@@ -83,6 +84,20 @@ body {
   width: 14em;
   text-align: center;
   background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -40px; /* Triangle appears just below the bubble */
+  left: 50%; /* Center the triangle horizontally */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-width: 20px; /* Adjust triangle size */
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent; /* Matching bubble color */
 }
 
 .robot-image {
