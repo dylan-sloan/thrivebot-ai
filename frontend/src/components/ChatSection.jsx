@@ -17,7 +17,7 @@ function ChatSection() {
 
   function _handleKeyDown(event){ //Sets the message section equal to the current input and clears input
     if(event.key === 'Enter' && input.trim() !== ''){
-      dispatch(addMessage(input));
+      dispatch(addMessage({id: '1', text: input}));
       setMessages(prevMessages => [...prevMessages, input]);
       setInput(''); // reset input
     }
